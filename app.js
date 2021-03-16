@@ -1,5 +1,4 @@
 const express = require("express");
-const { readSync } = require("fs");
 const path = require("path");
 
 const app = express();
@@ -10,5 +9,5 @@ app.get("/", (req, res) => {
 });
 
 app.listen(app.get("port"), () => {
-  console.log(app.get("port", "is ready!"));
+  console.log(app.get("port"), "is ready!");
 });
